@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script async src="js/todo.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <label for="subject">Subject:</label>
+      <input type="text" class="subject" name="subject" required>
+      <label for="priority">Priority:</label>
+      <select class="priority" name="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <label for="dueDate">Due Date:</label>
+      <input type="date" class="dueDate" name="dueDate">
+      <button type="submit" onclick="addTodo()">Submit</button>
+    </form>
+    <table id="todoTable" class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Subject</th>
+          <th scope="col" class="priority-col">Priority</th>
+          <th scope="col">Due date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Percent completed</th>
+          <th scope="col">Modified on</th>
+          <th scope="col">Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
